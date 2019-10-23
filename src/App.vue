@@ -17,17 +17,20 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState, mapActions } from 'vuex';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import '@/assets/scss/main.scss';
 
 export default {
   created() {
-    this.$store.dispatch('fetchSalesData');
+    this.fetchSalesData();
   },
   computed: {
     ...mapState(['loading']),
+  },
+  methods: {
+    ...mapActions(['fetchSalesData']),
   },
 };
 </script>
