@@ -38,5 +38,4 @@ npm run lint
  - Bootstrap, I put zero effort into the design and it looks bearable. I'd take that as a win.
 
 ## Dev notes
- - Design choices, Vuex mostly for seperation of concerns, 99.9% of the time an application this small does not need it, but 
- - Provided API URL for Challenge, has a CORS related error. This makes things working in web applications a bit wonky. I worked around the issue in my browser, but for production would need to be something that is fixed via other methods.
+ - Provided API URL for Challenge, has a CORS related error.
